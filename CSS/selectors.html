@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <style>
+      p {
+        text-align: center;
+        color:blue;
+      }
+
+      #para {
+      text-align: center;
+      color: red;
+      }
+      
+      .center {
+        text-align: center;
+        color: chartreuse;
+      }
+
+      p.p1 {
+        text-align: center;
+        color:darkmagenta;
+      }
+      
+      p.cent{
+        text-align: center;
+        color:firebrick
+      }
+
+      p.centlarge{
+        font-size: 300%;
+      }
+
+      * {
+      padding: 0;
+      margin: 0;
+      }
+
+      h1.group, h2.group, p.group{
+        text-align: center;
+        color:gold;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- 1) Element Selector -->
+    <div>
+    <p>Every paragraph will be affected by the style. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam exercitationem soluta reiciendis voluptatum unde, delectus quasi! Ab voluptas id soluta, illo, molestiae totam assumenda facere alias quos natus inventore laudantium?</p>
+    </div>
+
+    <!-- 2) Id Selector -->
+    <div id="para">
+    <p id="para">Hello World!</p>
+    </div>
+
+    <!-- 3) Class Selector -->
+    <div class="center">
+    <h1 class="center">Green and center-aligned heading</h1>
+    <p class="center">Green and center-aligned paragraph.</p>
+    </div>
+
+    <div class="p1">
+      <h1 class="p1">This heading will not be affected</h1>
+      <p class="p1">This paragraph will be red and center-aligned</p>
+    </div>
+
+    <div class="cent">
+      <h1 class="cent">This heading will not be affectedT</h1>
+      <p class="cent">This paragraph will be red and center-aligned.</p>
+      <p class="centlarge">This paragraph will be red, center-aligned, and in a large font-size</p>
+     </div>
+
+    <!-- 4) Grouping Selector -->
+     <div class="group">
+     <h1 class="group">Hello world!</h1>
+      <h2 class="group">Smaller heading</h2>
+      <p class="group">This is paragraph</p>
+     </div>
+     <br>
+    <!-- 5) Universal Selector-->
+    <p>center It Select all HTML elements</p>
+
+    <a href="./index.html">Main Page CSS</a>
+
+  </body>
+</html>
